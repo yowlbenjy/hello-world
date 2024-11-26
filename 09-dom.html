@@ -61,9 +61,17 @@
       <P class="js-total-amount"></P>
     </div>
 
+    <button onclick="coinToss('Heads')">Heads</button>
+    <button onClick="coinToss('Tails')">Tails</button>
+    <p class="display-result">You chose:</p>
+
   </body>
 
   <script>
+    function coinToss(coin){
+      document.querySelector('.display-result').innerHTML = `You chose: ${coin}`;
+    }
+
      let score = JSON.parse(localStorage.getItem('score')) || {
       wins: 0,
       losses: 0,
