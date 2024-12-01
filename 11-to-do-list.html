@@ -9,14 +9,17 @@
 <body>
 
   <p>Todo List Practice #1</p>
-  <input class="js-input-element" placeholder="What do you have to do?">
-  <button onclick="
-  addtoList();
-  ">
-  Add to list</button>
-  
+  <div class="todo-input-grid">
 
-  <div class="js-list"> 
+    <input class="js-input-element" placeholder="What do you have to do?">
+    <input class="js-date-input-element" type="date">
+    <button class="add-button" onclick="
+    addtoList();
+  ">
+      Add to list</button>
+  </div>
+
+  <div class="js-list todo-grid">
   </div>
 
   <script src="scripts/11-to-do-list.js"></script>
